@@ -11,6 +11,7 @@
   "license": "MIT",
   "repository": "component/search.js",
   "dependencies": {
+    "generator-supported": "~0.0.1",
     "debug": "*",
     "bytes": "~0.3.0",
     "cogent": "~0.4.0",
@@ -21,10 +22,12 @@
   "devDependencies": {
     "co": "^3.0.0",
     "mocha": "^1.18.0",
-    "rimraf": "^2.2.0"
+    "rimraf": "^2.2.0",
+    "gnode": "0",
+    "regenerator": "0"
   },
-  "main": "node/search",
   "scripts": {
-    "test": "mocha --harmony-generators --reporter spec"
+    "test": "NODE=gnode make test",
+    "prepublish": "make clean build"
   }
 }
