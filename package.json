@@ -1,0 +1,30 @@
+{
+  "name": "component-search2",
+  "description": "search through crawl components",
+  "version": "0.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "component/search.js",
+  "dependencies": {
+    "debug": "*",
+    "bytes": "~0.3.0",
+    "cogent": "~0.4.0",
+    "JSONStream": "~0.8.0",
+    "event-stream": "^3.1.1",
+    "stream-to-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "co": "^3.0.0",
+    "mocha": "^1.18.0",
+    "rimraf": "^2.2.0"
+  },
+  "main": "node/search",
+  "scripts": {
+    "test": "mocha --harmony-generators --reporter spec"
+  }
+}
