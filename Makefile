@@ -15,7 +15,6 @@ clean:
 test:
 	@$(NODE) $(BIN)mocha \
 		--harmony-generators \
-		--require should \
 		--reporter spec \
 		--timeout 30s \
 		--bail

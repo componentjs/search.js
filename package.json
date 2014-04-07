@@ -12,6 +12,7 @@
   "repository": "component/search.js",
   "dependencies": {
     "generator-supported": "~0.0.1",
+    "component-consoler": "^1.0.0",
     "debug": "*",
     "bytes": "~0.3.0",
     "cogent": "~0.4.0",
